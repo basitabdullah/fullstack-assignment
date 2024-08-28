@@ -11,6 +11,13 @@
     h1 {
       font-size: 60px;
       font-weight: 400;
+      @media (max-width: 660px) {
+        margin: 0;
+        font-size: 35px;
+      }
+      @media (max-width: 350px) {
+        font-size: 22px;
+      }
     }
 
     .input-container {
@@ -27,6 +34,12 @@
         border: none;
         width: 550px;
         font-size: 17px;
+        @media (max-width: 660px) {
+          width: 300px;
+        }
+        @media (max-width: 350px) {
+          width: 100%;
+        }
       }
 
       svg {
@@ -41,5 +54,12 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    @media (max-width: 800px) {
+      padding: 50px;
+    }
+    @media (max-width: 350px) {
+      padding: 20px;
+    }
   }
 }

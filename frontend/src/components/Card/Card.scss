@@ -1,11 +1,13 @@
 .card {
   background-color: #f5f6f9;
-  height: 100px;
+  min-height: 150px;
   width: 400px;
   margin-bottom: 30px;
   border-radius: 10px;
-  height: 150px;
   border: 1px solid rgb(211, 211, 211);
+  @media (max-width: 860px) {
+    width: 100%;
+  }
   hr {
     width: 100%;
     border: 1px solid rgb(211, 211, 211);

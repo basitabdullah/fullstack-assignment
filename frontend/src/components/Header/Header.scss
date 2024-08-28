@@ -6,7 +6,10 @@
   padding: 20px 30px;
   color: white;
   justify-content: space-between;
-
+  @media (max-width: 520px) {
+    flex-direction: column;
+    gap: 20px;
+  }
   .logo-sec {
     display: flex;
     align-items: center;
@@ -22,6 +25,10 @@
       object-fit: contain;
       cursor: pointer;
     }
+
+    span {
+      color: white;
+    }
   }
 
   button {
@@ -33,5 +40,8 @@
     color: white;
     font-size: 17px;
     cursor: pointer;
+    @media (max-width: 735px) {
+      margin: 0;
+    }
   }
 }

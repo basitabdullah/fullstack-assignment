@@ -1,14 +1,11 @@
 import "./Card.scss";
 
-const Card = () => {
+const Card = ({ title, description }) => {
   return (
     <div className="card">
-      <h4>Branches</h4>
+      <h4>{title}</h4>
       <hr />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam
-        temporibus dicta
-      </p>
+      <p>{description}</p>
     </div>
   );
 };

@@ -6,6 +6,12 @@
   height: 40vh;
   align-items: flex-start;
   padding: 50px 100px;
+  @media (max-width: 947px) {
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
   .sec-one,
   .sec-two,
@@ -17,6 +23,9 @@
     }
     ul {
       list-style: none;
+      @media (max-width: 947px) {
+        width: 150px;
+      }
 
       li {
         margin-bottom: 5px;
