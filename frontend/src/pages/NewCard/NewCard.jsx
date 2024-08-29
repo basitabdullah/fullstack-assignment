@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./NewCard.scss";
-
+import toast from "react-hot-toast";
 import { useState } from "react";
 
 const NewCard = () => {
@@ -29,7 +29,7 @@ const NewCard = () => {
       if (response.ok) {
         setTitle("");
         setDescription("");
-        alert("Card created successfully!");
+        toast.success("Card created successfully!");
         navigate("/");
       } else {
         throw new Error("Failed to create card");
@@ -47,6 +47,7 @@ const NewCard = () => {
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          required
         />
 
         <label>Enter A Description</label>
@@ -54,6 +55,7 @@ const NewCard = () => {
           type="text"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
+          required
         />
         <button type="submit">Submit</button>
       </form>
