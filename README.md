@@ -1,27 +1,35 @@
-# Help Center API Assignment
+# Help Center API
 
-## Instructions
+## Description
+A RESTful API to manage "Help Center" cards, along with a frontend to display the cards.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/iAmritMalviya/fullstack-assignment
-   cd fullstack-assignment
-   ```
+## Features
+- Create a new card
+- Retrieve all cards
+- Retrieve a specific card by title
 
-2. **Frontend:**
-   - Create a React app in the `frontend` folder.
-   - Follow the instructions in `frontend.md` to complete the frontend.
+## Installation
 
-3. **Backend:**
-   - Create a Node.js app in the `backend` folder.
-   - Follow the `backend.md` instructions to complete the backend.
+### Backend
+1. Clone the repository.
+2. Navigate to the backend folder.
+3. Install backend dependencies.
+4. Create a `.env` file in the backend folder and add a `PORT` and a local MongoDB URI `MONGO_URI`.
+5. Start the backend server.
 
-4. **Push Your Work:**
-   - Push both the frontend and backend apps to the same repository.
-   - Make sure the repository is public.
+### Frontend
+1. Navigate to the frontend folder.
+2. Install frontend dependencies.
+3. Start the frontend development server.
 
-5. **Submit Your Work:**
-   - Paste the GitHub repository link in the Google form you received after pushing your code.
+## API Endpoints
 
----
+### Backend
+- `GET /ping`: Check if the server is running.
+- `POST /cards`: Create a new card.
+- `GET /cards`: Get all cards.
+- `GET /cards/:title`: Get a specific card by title.
+
+## License
+MIT
 
